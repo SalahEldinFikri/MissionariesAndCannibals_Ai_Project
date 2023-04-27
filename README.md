@@ -18,25 +18,14 @@
 
 
 ## The Outputs:
-```
-DFS simulation:
-Initial State: ['C', 'B', 'A']
-Goal State: ['A', 'B', 'C']
-Path found: ['C', 'B', 'A'] -> ['C', 'B'] -> ['C', 'A', 'B'] -> ['C', 'A'] -> ['B', 'A', 'C'] -> ['B', 'A'] -> ['B'] -> ['A', 'B'] -> ['A', 'B', 'C']
-Number of nodes explored: 12
-Time taken: 0.0001 seconds
 
-BFS simulation:
-Initial State: ['C', 'B', 'A']
-Goal State: ['A', 'B', 'C']
-Path found: ['C', 'B', 'A'] -> ['C', 'A', 'B'] -> ['B', 'A', 'C'] -> ['A', 'B', 'C']
-Number of nodes explored: 5
-Time taken: 0.0002 seconds
+#### The output will be printed to the console, with the DFS and BFS solutions printed on separate lines. For example:
+```
+DFS solution: [(2, 0), (0, 2), (1, 1), (0, 2), (0, 1), (2, 0), (0, 1), (1, 1), (0, 2)]
+BFS solution: [(0, 2), (0, 1), (1, 1), (0, 2), (2, 0), (0, 1), (1, 1), (0, 2), (2, 0)]
 
 ```
-#### The first section shows the results of the Depth First Search algorithm and the second section shows the results of the Breadth First Search algorithm.
-
-#### Both algorithms were able to find the path from the initial state ['C', 'B', 'A'] to the goal state ['A', 'B', 'C']. However, BFS was able to find the path in fewer nodes explored (5 compared to DFS's 12) and took slightly longer (0.0002 seconds compared to DFS's 0.0001 seconds).
+#### Note that the solutions may be different between the DFS and BFS algorithms, as they use different search strategies.
 
 ## Here is a simple flow chart:
 
