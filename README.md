@@ -73,3 +73,5 @@ BFS solution: [(0, 2), (0, 1), (1, 1), (0, 2), (2, 0), (0, 1), (1, 1), (0, 2), (
 ```
 
 #### This is a flowchart representing the high-level steps of the code. It starts at the "Start" node, then moves to "Define Moves", where the valid moves for the problem are defined. The next step is "Define States", where the initial and goal states for the problem are defined. The next step is "Check Valid", which checks if a given state is valid according to the problem constraints. The next step is "Apply Move", which applies a move to a given state. The next step is "Perform DFS/BFS", which performs either a depth-first search or breadth-first search to find a solution to the problem. The final step is "Print Result", which prints the solution found by the search algorithm. The flowchart ends at the "End" node.
+
+### Youtube: [Link](https://youtu.be/u2goGGnUXZw)
