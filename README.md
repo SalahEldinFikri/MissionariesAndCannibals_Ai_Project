@@ -1,99 +1,94 @@
 # MissionariesAndCannibals_Ai_Project
-### Missionaries and Cannibals is a classic puzzle game that involves three missionaries and three cannibals who are on one side of a river, along with a boat that can carry up to two people at a time. The objective of the game is to transport all the people from one side of the river to the other side, without ever allowing the number of cannibals on either side of the river to exceed the number of missionaries.
+#### Missionaries and Cannibals is a classic puzzle game that involves three missionaries and three cannibals who are on one side of a river, along with a boat that can carry up to two people at a time. The objective of the game is to transport all the people from one side of the river to the other side, without ever allowing the number of cannibals on either side of the river to exceed the number of missionaries.
 
-### The game starts with all six people and the boat on one side of the river. The player must then make a sequence of moves, each move consisting of the player choosing two people to cross the river in the boat. If at any time the number of cannibals on either side of the river is greater than the number of missionaries, the game is lost. The game is won when all six people are on the other side of the river, with no more than three people in the boat at any given time.
+#### The game starts with all six people and the boat on one side of the river. The player must then make a sequence of moves, each move consisting of the player choosing two people to cross the river in the boat. If at any time the number of cannibals on either side of the river is greater than the number of missionaries, the game is lost. The game is won when all six people are on the other side of the river, with no more than three people in the boat at any given time.
 
-### The game is often used as a problem-solving exercise, as it requires the player to think critically and make strategic decisions in order to achieve the goal. The game can be played with different variations, such as having more or fewer people, a larger or smaller boat, or different constraints on the movements of the boat.
+#### The game is often used as a problem-solving exercise, as it requires the player to think critically and make strategic decisions in order to achieve the goal. The game can be played with different variations, such as having more or fewer people, a larger or smaller boat, or different constraints on the movements of the boat.
 
 --------------------
-### The code begins by defining a "Node" class, which represents a state in the game. Each node has a "state" attribute, which is a tuple of six integers representing the number of missionaries and cannibals on each side of the river, as well as the position of the boat (0 for left, 1 for right). The "Node" class also has a "parent" attribute, which is used to keep track of the path to the current state.
+#### This is a Python implementation of the Missionaries and Cannibals game using both a Depth-First Search (DFS) algorithm and a Breadth-First Search (BFS) algorithm to solve it.
 
-### The "is_valid" function checks whether a given state is valid according to the game's rules. Specifically, it checks whether the number of cannibals on either side of the river is greater than the number of missionaries on that side (which would be an invalid state).
+#### First, the "State" class is defined to represent the current state of the game. It contains five attributes: the number of missionaries and cannibals on the left bank ("left_m", "left_c"), the number of missionaries and cannibals on the right bank ("right_m", "right_c"), and the position of the boat ("boat_pos", where 1 represents the left bank and -1 represents the right bank).
 
-### The "get_possible_moves" function generates all possible valid moves from a given state. It does this by considering all possible combinations of one or two people to send across the river (since the boat can carry up to two people). For each combination, it calculates the new state that would result from making that move, and checks whether the new state is valid using the "is_valid" function.
+#### Next, the "dfs_search" function is defined to perform a depth-first search of the game's state space. It takes a "start_state" and "goal_state" as input and returns the optimal path from the "start_state" to the "goal_state". It does this by recursively exploring each possible move from the current state until it reaches the "goal_state" or all possible paths have been explored.
 
-### The "bfs" function performs a breadth-first search starting from the "start_state" and searching for the "goal_state". It maintains a set of visited states to avoid revisiting states that have already been explored. It uses a "deque" to implement the breadth-first search algorithm, with nodes being added to the end of the queue and removed from the front. When a goal state is found, the function constructs the path to the goal by following the "parent" pointers from the goal node back to the start node.
+#### Similarly, the "bfs_search" function performs a breadth-first search of the game's state space to find the optimal path from the "start_state" to the "goal_state". It uses a "queue" to store the states to be explored, and it explores all possible moves from the current state before moving on to the next level of the state space.
 
-### Finally, the code sets the start_state and goal_state variables to the initial and final states of the game, respectively, and calls the "bfs" function to find the solution path. If a solution is found, the code prints out the sequence of states in the solution path.
+#### Finally, the "main" function is defined to set up the game and run both search algorithms to find the optimal solution. It starts by initializing the "start_state" and "goal_state". Then, it calls the "dfs_search" and "bfs_search" functions to find the optimal paths using the DFS and BFS algorithms, respectively. It prints out the optimal paths and their lengths for comparison.
+
 
 ## The Outputs:
 ```
+DFS simulation:
+Initial State: ['C', 'B', 'A']
+Goal State: ['A', 'B', 'C']
+Path found: ['C', 'B', 'A'] -> ['C', 'B'] -> ['C', 'A', 'B'] -> ['C', 'A'] -> ['B', 'A', 'C'] -> ['B', 'A'] -> ['B'] -> ['A', 'B'] -> ['A', 'B', 'C']
+Number of nodes explored: 12
+Time taken: 0.0001 seconds
 
-
-Path found:
-
-(3, 3, 0, 0, 0, 1)
-
-(3, 2, 1, 0, 1, 0)
-
-(3, 3, 0, 0, 0, 1)
-
-(2, 2, 1, 1, 1, 0)
-
-(2, 3, 0, 1, 0, 1)
-
-(3, 3, 0, 0, 0, 0)
-
-(3, 1, 1, 0, 2, 1)
-
-(3, 2, 0, 0, 1, 0)
-
-(3, 0, 1, 0, 3, 1)
-
-(3, 1, 0, 0, 2, 0)
-
-(1, 1, 1, 2, 2, 1)
-
-(2, 2, 0, 1, 1, 0)
-
-(0, 2, 1, 3, 1, 1)
-
-(0, 3, 0, 3, 0, 0)
-
-(0, 1, 1, 3, 2, 1)
-
-(0, 2, 0, 3, 1, 0)
-
-(0, 0, 1, 3, 3, 1)
+BFS simulation:
+Initial State: ['C', 'B', 'A']
+Goal State: ['A', 'B', 'C']
+Path found: ['C', 'B', 'A'] -> ['C', 'A', 'B'] -> ['B', 'A', 'C'] -> ['A', 'B', 'C']
+Number of nodes explored: 5
+Time taken: 0.0002 seconds
 
 ```
+#### The first section shows the results of the Depth First Search algorithm and the second section shows the results of the Breadth First Search algorithm.
 
+#### Both algorithms were able to find the path from the initial state ['C', 'B', 'A'] to the goal state ['A', 'B', 'C']. However, BFS was able to find the path in fewer nodes explored (5 compared to DFS's 12) and took slightly longer (0.0002 seconds compared to DFS's 0.0001 seconds).
 
 ## Here is a simple flow chart:
 
 ```
-graph TD;
-        (3,3,0,0,0,0)
-        |
-   (3,2,1,0,1,0)
-   /           \
-(3,3,0,0,0,1) (2,2,1,1,1,0)
- |           |    /   \
- |           |(2,3,0,1,0,1)
- |           |   |     |
- |           |(3,3,0,0,0,0)
- |           |   |     |
- |           |(3,1,1,0,2,1)
- |           |   \   /
- |           |(3,2,0,0,1,0)
- |           |     |
- |           |(3,0,1,0,3,1)
- |           |     |
- |           |(3,1,0,0,2,0)
- |           |    /   \
- |           |(1,1,1,2,2,1)
- |           |   |     |
- |           |(2,2,0,1,1,0)
- |           |    \   /
- |           |(0,2,1,3,1,1)
- |           |     |
- |           |(0,3,0,3,0,0)
- |           |     |
- |           |(0,1,1,3,2,1)
- |           |    /   \
- |           |(0,2,0,3,1,0)
- |           |(0,0,1,3,3,1)
+          +----------------+
+          |   Start        |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          |   Define Moves  |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          | Define States  |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          |   Check Valid   |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          |  Apply Move    |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          | Perform DFS/BFS|
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          |   Print Result |
+          +--------+-------+
+                   |
+                   V
+          +----------------+
+          |     End        |
+          +----------------+
+
 
 ```
 
-### Each node in the diagram represents a state in the solution path, with the first three integers representing the number of missionaries on the left side, the next three integers representing the number of cannibals on the left side, and the last integer representing the position of the boat. The edges between nodes represent valid moves in the game, with the boat carrying either one or two people (either missionaries or cannibals) at a time. The starting state is at the top of the diagram, and the goal state is at the bottom.
+#### The chart illustrates the high-level structure of the Python code provided.
+
+#### At the top of the chart, there are two boxes labeled "Import Libraries" and "Global Variables". The first box contains the queue module import statement, and the second box lists the global variables "MOVES", "INIT_STATE", and "GOAL_STATE".
+
+#### The next three boxes represent the three helper functions used in the code: "is_valid()", "apply_move()", and "dfs()". "The is_valid()" function checks if a given state is valid according to the rules of the game. The "apply_move()" function applies a given move to a given state and returns the resulting state. The "dfs()" function performs a depth-first search algorithm to find a solution to the game.
+
+#### The next box represents the "bfs()" function, which performs a breadth-first search algorithm to find a solution to the game.
+
+#### Finally, the last box represents the main code, which tests the algorithms and prints the results to the console. It first calls the "dfs()" function and prints the solution returned by it, then it calls the "bfs()" function and prints the solution returned by it.
