@@ -72,12 +72,4 @@ BFS solution: [(0, 2), (0, 1), (1, 1), (0, 2), (2, 0), (0, 1), (1, 1), (0, 2), (
 
 ```
 
-#### The chart illustrates the high-level structure of the Python code provided.
-
-#### At the top of the chart, there are two boxes labeled "Import Libraries" and "Global Variables". The first box contains the queue module import statement, and the second box lists the global variables "MOVES", "INIT_STATE", and "GOAL_STATE".
-
-#### The next three boxes represent the three helper functions used in the code: "is_valid()", "apply_move()", and "dfs()". "The is_valid()" function checks if a given state is valid according to the rules of the game. The "apply_move()" function applies a given move to a given state and returns the resulting state. The "dfs()" function performs a depth-first search algorithm to find a solution to the game.
-
-#### The next box represents the "bfs()" function, which performs a breadth-first search algorithm to find a solution to the game.
-
-#### Finally, the last box represents the main code, which tests the algorithms and prints the results to the console. It first calls the "dfs()" function and prints the solution returned by it, then it calls the "bfs()" function and prints the solution returned by it.
+#### This is a flowchart representing the high-level steps of the code. It starts at the "Start" node, then moves to "Define Moves", where the valid moves for the problem are defined. The next step is "Define States", where the initial and goal states for the problem are defined. The next step is "Check Valid", which checks if a given state is valid according to the problem constraints. The next step is "Apply Move", which applies a move to a given state. The next step is "Perform DFS/BFS", which performs either a depth-first search or breadth-first search to find a solution to the problem. The final step is "Print Result", which prints the solution found by the search algorithm. The flowchart ends at the "End" node.
