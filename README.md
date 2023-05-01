@@ -75,3 +75,13 @@ BFS solution: [(0, 2), (0, 1), (1, 1), (0, 2), (2, 0), (0, 1), (1, 1), (0, 2), (
 #### This is a flowchart representing the high-level steps of the code. It starts at the "Start" node, then moves to "Define Moves", where the valid moves for the problem are defined. The next step is "Define States", where the initial and goal states for the problem are defined. The next step is "Check Valid", which checks if a given state is valid according to the problem constraints. The next step is "Apply Move", which applies a move to a given state. The next step is "Perform DFS/BFS", which performs either a depth-first search or breadth-first search to find a solution to the problem. The final step is "Print Result", which prints the solution found by the search algorithm. The flowchart ends at the "End" node.
 
 ### Youtube: [Link](https://youtu.be/u2goGGnUXZw)
+
+## Another Version:
+#### The Windows Form app in this project is a visual implementation of the Missionaries and Cannibals game. It presents a river with one ice cream and one missionaries, one cannibals, and a boat on one side of the river. The objective of the game is to get them all to the other side of the river without having any of the cannibals eat the missionaries or the ice cream.
+
+#### To play the game, the player must click on the boat to move it to the other side of the river. They can then click on the missionaries or cannibals or ice cream to put them in the boat. The boat can only hold one people at a time. If there are more cannibals than missionaries on either side of the river, the game is lost.
+
+#### The player must use logic to move the people across the river in the correct order and avoid losing the game. The game ends when all the people are safely transported to the other side of the river.
+![image](https://user-images.githubusercontent.com/71356170/235387353-73ccf663-4c79-4ec8-9809-a10266ca2140.png)
+
+
