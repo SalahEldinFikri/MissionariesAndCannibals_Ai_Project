@@ -82,6 +82,6 @@ BFS solution: [(0, 2), (0, 1), (1, 1), (0, 2), (2, 0), (0, 1), (1, 1), (0, 2), (
 #### To play the game, the player must click on the boat to move it to the other side of the river. They can then click on the missionaries or cannibals or ice cream to put them in the boat. The boat can only hold one people at a time. If there are more cannibals than missionaries on either side of the river, the game is lost.
 
 #### The player must use logic to move the people across the river in the correct order and avoid losing the game. The game ends when all the people are safely transported to the other side of the river.
-![image](https://user-images.githubusercontent.com/71356170/235387353-73ccf663-4c79-4ec8-9809-a10266ca2140.png)
+![image](https://user-images.githubusercontent.com/71356170/235389398-8952d5e9-b340-4907-996f-19ca36e5685e.png)
 
 
