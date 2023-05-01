@@ -1,0 +1,26 @@
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.exe.config
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.exe
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.pdb
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csprojResolveAssemblyReference.cache
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.Form1.resources
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.Properties.Resources.resources
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.GenerateResource.Cache
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.exe
+c:\users\ahmad\documents\visual studio 2015\Projects\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.pdb
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.exe.config
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.exe
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\bin\Debug\WindowsFormsApplication31.pdb
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.AssemblyReference.cache
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.SuggestedBindingRedirects.cache
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.Form1.resources
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.Properties.Resources.resources
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.GenerateResource.cache
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.CoreCompileInputs.cache
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.exe
+C:\Users\salah\Downloads\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.pdb
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.AssemblyReference.cache
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.SuggestedBindingRedirects.cache
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.Form1.resources
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.csproj.GenerateResource.cache
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.exe
+D:\الكلية\3 St\Term 2\AI\week (14)\ai project\WindowsFormsApplication31\WindowsFormsApplication31\obj\Debug\WindowsFormsApplication31.pdb
